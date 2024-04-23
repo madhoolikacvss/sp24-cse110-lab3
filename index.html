@@ -8,7 +8,7 @@
   <style>
     /* Adding colour - 1 commenting*/
     :root {
-      --wider-gamut-color: color(srgb 0.7 0.6 0.5 / 0.8);
+      --wider-gamut-color: rgba(179, 153, 128, 0.8); 
     }
     h1 {
       color: var(--main-color, #000);; /* Apply black color to heading 2 -adding color*/
@@ -25,7 +25,7 @@
     }
     /* Color mixing */
     li {
-      background-color: color-mix(lch 50% 100 30, #f00 80%, #00f 20%); /* Apply method to mix colors with values & percentages */
+      color: color-mix(lch(50% 100 30), #f00 80%, #00f 20%); /* Apply method to mix colors with values & percentages */
     }
     body {
       background-color: skyblue; /* Apply sky blue background color to body */
