@@ -94,13 +94,13 @@
     #minutes {
       border-style: solid; /*  solid border style */
       border-color: #ccc; /*  border color */
-      border-width: 1px; /*  border width */
+      border-width: 2px; /*  border width */
       border-radius: 5px; /*  border radius */
     }
     #legendary {
       border-style: solid; /*  solid border style */
       border-color: #ccc; /*  border color */
-      border-width: 1px; /*  border width */
+      border-width: 2px; /*  border width */
       border-radius: 5px; /*  border radius */
     }
 
@@ -119,7 +119,7 @@
     .container {
       display: flex; /*  flex to the display property */
       background-color: lightgray;
-      padding: 10px;
+      padding: 20px;
       margin-bottom: 20px;
       justify-content: space-between; /* Arrange items with equal space between them */
       align-items: center; /* Align items vertically */
@@ -139,7 +139,7 @@
 
     /* Sizing */
     img {
-      max-width: 100%; /* Set maximum width to 100% of the parent element */
+      max-width: 200px; /* Set maximum width to 100% of the parent element */
       height: auto; /* Maintain aspect ratio */
     }
 
@@ -227,15 +227,14 @@
       <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h2>The movie is legendary but so are you</h2>
         <p>This section talks about how you are also legendary, just like the movie Shrek. Watch the following to make yourself legendary</p>
-      </div>
-    
-      <!-- Image -->
-      <div style="position: relative;">
-        <img src="https://github.com/madhoolikacvss/Lab2_Starter/raw/568b3b7274631a4cc0e1745dcccc975479bd8dd3/legendary.jpg" alt="Legendary Image" style="max-width: 100%; height: auto;">
+        <!-- Image -->
+        <div style="max-width: 100%; height: auto;">
+          <img src="https://github.com/madhoolikacvss/Lab2_Starter/raw/568b3b7274631a4cc0e1745dcccc975479bd8dd3/legendary.jpg" alt="Legendary Image" style="width: 200px; height: auto;">
+        </div>
       </div>
     
       <!-- Audio -->
-      <div style="display: flex; justify-content: center;">
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <audio controls>
           <source src="https://github.com/madhoolikacvss/Lab2_Starter/raw/568b3b7274631a4cc0e1745dcccc975479bd8dd3/Shrek%202-The%20Dinner%20Scene%20audio.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
@@ -243,13 +242,13 @@
       </div>
     
       <!-- Video -->
-      <div style="display: flex; justify-content: center;">
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <video width="320" height="240" controls>
           <source src="https://github.com/madhoolikacvss/Lab2_Starter/raw/568b3b7274631a4cc0e1745dcccc975479bd8dd3/Shrek%202-The%20Dinner%20Scene%20video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
-   </section>
+</section>
 
   <footer>
     <p>&copy; 2024 Today's Meeting. All rights reserved.</p>
