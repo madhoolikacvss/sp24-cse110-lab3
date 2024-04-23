@@ -8,7 +8,7 @@
   <style>
     /* Adding colour - 1 commenting*/
     :root {
-      --main-color: #3366ff; /* Default main color */
+      --wider-gamut-color: color(srgb 0.7 0.6 0.5 / 0.8);
     }
     h1 {
       color: var(--main-color, #000);; /* Apply black color to heading 2 -adding color*/
@@ -21,9 +21,8 @@
     }
     /* Wider-gamut color */
     div {
-      background-color: color(srgb 0.7 0.6 0.5 / 0.8); /* Apply predefined color space with values */
+      background-color: var(--wider-gamut-color);
     }
-
     /* Color mixing */
     li {
       background-color: color-mix(lch 50% 100 30, #f00 80%, #00f 20%); /* Apply method to mix colors with values & percentages */
