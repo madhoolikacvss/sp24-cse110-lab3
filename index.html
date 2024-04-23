@@ -25,7 +25,10 @@
     }
     /* Color mixing */
     li {
-      color: color-mix(lch(50% 100 30), #f00 80%, #00f 20%); /* Apply method to mix colors with values & percentages */
+      --color-red: #f00;
+      --color-blue: #00f;
+      /* Mix colors using HSL representation */
+      color: color-mix(lch(50% 100 30), var(--color-red) 80%, var(--color-blue) 20%); /* Apply color mixing */ /* Apply method to mix colors with values & percentages */
     }
     body {
       background-color: skyblue; /* Apply sky blue background color to body */
