@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's meeting minutes</title>
+  <link rel="icon" href="https://github.com/madhoolikacvss/Lab2_Starter/raw/18429b3e25ba337ba6b652e79076b3aceddf2f6e/icon.png" type="image/png">
+  <style>
+    /* Adding colour - 1 commenting*/
+    :root {
+      --main-color: #3366ff; /* Default main color */
+    }
+    h1 {
+      color: var(--main-color, #000);; /* Apply black color to heading 2 -adding color*/
+    }
+     p {
+      color: #3b240b; /* Apply dark brown color to paragraphs */
+    }
+    span {
+      color: hsl(240, 100%, 50%); /* Apply color to spans */
+    }
+    /* Wider-gamut color */
+    div {
+      background-color: color(srgb 0.7 0.6 0.5 / 0.8); /* Apply predefined color space with values */
+    }
+
+    /* Color mixing */
+    li {
+      background-color: color-mix(lch 50% 100 30, #f00 80%, #00f 20%); /* Apply method to mix colors with values & percentages */
+    }
+    body {
+      background-color: skyblue; /* Apply sky blue background color to body */
+    }
+    /* Units of Measurement */
+    .container {
+      width: 80%; /* Relative width: 80% of the parent element's width */
+    }
+
+    .item {
+      font-size: 1.2em; /* Relative font size: 1.2 times the parent element's font size */
+    }
+
+    .padding {
+      padding: 1.5rem; /* Relative padding: 1.5 times the default font size */
+    }
+
+    .header {
+      height: 100px; /* Absolute height: 100 pixels */
+    }
+
+    .footer {
+      margin-top: 20px; /* Absolute margin: 20 pixels */
+    }
+
+    .sidebar {
+      width: 300px; /* Absolute width: 300 pixels */
+    }
+
+    /* Margin */
+    h2 {
+      margin-top: 20px; /* Long margin-top */
+      margin-right: auto; /* Long margin-right */
+      margin-bottom: 10px; /* Long margin-bottom */
+      margin-left: auto; /* Long margin-left */
+    }
+
+    nav {
+      margin: auto; /* Short margin with top and bottom specified */
+    }
+
+    .padding {
+      padding-top: 10px; /* Long padding-top */
+      padding-right: 20px; /* Long padding-right */
+      padding-bottom: 10px; /* Long padding-bottom */
+      padding-left: 20px; /* Long padding-left */
+    }
+
+    /* Padding */
+    #minutes {
+      padding-top: 20px; /* Long padding-top */
+      padding-bottom: 10px; /* Long padding-bottom */
+      padding-left: 15px; /* Long padding-left */
+      padding-right: 15px; /* Long padding-right */
+    }
+
+    .sidebar {
+      padding: 10px 20px; /* Short padding with top, right, bottom, and left specified */
+    }
+
+    /* Border */
+    #minutes {
+      border-style: solid; /* Apply solid border style */
+      border-color: #ccc; /* Apply border color */
+      border-width: 1px; /* Apply border width */
+      border-radius: 5px; /* Apply border radius */
+    }
+
+    .sidebar {
+      border: 2px dashed #999; /* Short border with style, color, and width specified */
+      border-radius: 10px; /* Apply border radius */
+    }
+
+     /* Text */
+    a {
+      color: blue; /* Apply color to links */
+      text-decoration: none; /* Remove underline from links */
+    }
+
+    /* Display */
+    .container {
+      display: flex; /* Apply flex to the display property */
+      background-color: lightgray;
+      padding: 10px;
+      margin-bottom: 20px;
+      justify-content: space-between; /* Arrange items with equal space between them */
+      align-items: center; /* Align items vertically */
+    }
+
+    .sidebar {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      margin-right: 20px;
+    }
+
+    nav {
+      background-color: lightgreen;
+      padding: 10px;
+    }
+
+    /* Sizing */
+    img {
+      max-width: 100%; /* Set maximum width to 100% of the parent element */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    video {
+      max-width: 100%; /* Set maximum width to 100% of the parent element */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Positioning */
+    audio {
+      position: relative; /* Set position property to relative */
+      top: 20px; /* Adjust position relative to its normal position */
+    }
+
+    img {
+      position: static; /* Set position property to static */
+    }
+
+    /* Pseudo-classes */
+    img:hover,
+    video:hover,
+    audio:hover {
+      opacity: 0.8; /* Reduce opacity on hover */
+    }
+
+    button:active {
+      background-color: gray; /* Change background color when active */
+    }
+
+    /* Media Query */
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column; /* Change flex direction to column on smaller screens */
+      }
+      .sidebar {
+        width: 100%; /* Make sidebar occupy full width on smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+      }
+      #minutes, #legendary {
+        display: grid; /* Switch sections to grid layout on smaller screens */
+        grid-template-columns: 1fr; /* Single column layout for sections */
+      }
+    }
+    
+</style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Today's Meeting</h1>
+    <nav>
+      <ul>
+        <li><a href="#minutes">Minutes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="display: flex; flex-direction: column;">
+    <section id="minutes" style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px;">
+      <h2>Minutes</h2>
+      <p>This section will contain the minutes of the meeting.</p>
+      <div>
+        <p>At first the characters in the movie <strong>Shrek</strong> were introduced after which we <em>analyzed</em> the <em>characteristics</em> of <strong>Shrek</strong> and his dynamics with the legendary <strong>Donkey</strong>.</p>
+        <span>This is a span element for highlighting text.</span>
+        <hr>
+        <p>Here is what was said</p>
+        <ul>
+          <li><strong>Donkey</strong> is grey</li>
+          <li><strong>Shrek</strong> might be better as pink</li>
+          <li><strong>Fiona</strong> is pretty</li>
+        </ul>
+        <hr>
+        <p>Plan of action for next meeting</p>
+        <ol>
+          <li>Colour grade <strong>Shrek</strong> to pink</li>
+          <li>Make <strong>Donkey</strong> have some more muscles</li>
+          <li>Make <strong>Fiona</strong> have curly hair or wavy hair at least</li>
+        </ol>
+        <br>
+        <p>"For Five Minutes, Could You Not Be Yourself?"</p>
+        <p><a href="#legendary">The movie is legendary but so are you</a></p>
+      </div>
+    </section>
+
+    <section id="legendary" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); grid-gap: 20px;">
+      <h2>The movie is legendary but so are you</h2>
+      <p>This section talks about how you are also legendary, just like the movie Shrek. Watch the following to make yourself legendary</p>
+
+      <!-- Image -->
+      <img src="https://github.com/madhoolikacvss/Lab2_Starter/raw/568b3b7274631a4cc0e1745dcccc975479bd8dd3/legendary.jpg" alt="Legendary Image">
+
+      <!-- Audio -->
+      <audio controls>
+        <source src="https://github.com/madhoolikacvss/Lab2_Starter/raw/568b3b7274631a4cc0e1745dcccc975479bd8dd3/Shrek%202-The%20Dinner%20Scene%20audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- Video -->
+      <video width="320" height="240" controls>
+        <source src="https://github.com/madhoolikacvss/Lab2_Starter/raw/568b3b7274631a4cc0e1745dcccc975479bd8dd3/Shrek%202-The%20Dinner%20Scene%20video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Today's Meeting. All rights reserved.</p>
+  </footer>
+</body>
+</html>
